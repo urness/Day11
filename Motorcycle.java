@@ -12,11 +12,11 @@ public class Motorcycle implements Vehicle {
     }
 
     public void speedUp() {
-        speed = speed + gear;
+        speed = speed + 5*gear;
     }
 
     public void applyBrakes() {
-        speed = speed - 1;
+        speed = speed - 5;
         if (speed < 0) {
             speed = 0;
         }

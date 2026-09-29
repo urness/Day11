@@ -1,7 +1,7 @@
 public class Car implements Vehicle{
 
     private int gear;
-    private double speed;
+    private int speed;
 
     public Car() {
         gear = 1;
@@ -19,7 +19,7 @@ public class Car implements Vehicle{
 
     @Override
     public void applyBrakes() {
-        speed = speed - 10 *gear;
+        speed = speed - 10;
         if (speed < 0) {
             speed = 0;
         }
